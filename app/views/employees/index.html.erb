@@ -1,0 +1,9 @@
+<%# For our index page for Employees, a user should be able to click on a specific Employee to go to their corresponding show page.
+
+The Employee show page should list all of their attributes (and as a bonus, try to get their picture to show up!) %>
+<h2> Employees </h2>
+<ol>
+<% @employees.each do |employee|%>
+<li><%=link_to employee.full_name, employee%></li>
+<% end %>
+</ol>
